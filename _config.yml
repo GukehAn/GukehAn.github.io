@@ -1,13 +1,12 @@
 # Site settings
-title:          Rain
+title:          GukehAn
 description:    "Rain is a simple and clean Jekyll theme with focus on content."
-url:            https://github.com/inelaah/rain
+url:            https://gukehan.github.io
 
 # Author
 author:
-  name:         Inela Avdic Hukic
-  email:        inelaah@gmail.com
-  url:          https://inelaah.com
+  name:         GukehAn
+  email:        chenzclyh@outlook.com
 
 # Build settings
 markdown:       kramdown
@@ -34,7 +33,5 @@ related_posts_section:
 
 # Links to social media
 social:
-  email: inelaah@gmail.com
-  github: https://github.com/inelaah
-  twitter: https://twitter.com
-  linkedin: https://ba.linkedin.com/in/inela-avdic-hukic-322354131
+  email: chenzclyh@outlook.com
+  github: https://github.com/GukehAn
