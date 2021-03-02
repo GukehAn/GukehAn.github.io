@@ -23,5 +23,9 @@
     {% if site.data.settings.github %}
       <li><a href="{{ site.data.settings.github }}"><i class="ion ion-logo-github"></i></a></li>
     {% else %} {% endif %}
+    
+    {% if site.data.settings.email %}
+      <li><a href="{{ site.data.settings.email }}"><i class="ion ion-ios-send"></i></a></li>
+    {% else %} {% endif %}
   </ul>
 </div>
