@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "Training Region-based Object Detectors with Online Hard Example Mining(OHEM)论文阅读"
-date:   2021-03-01
+title:  "OHEM 论文阅读"
+date:   2021-03-02
 image:  ohem.jpg
 tags:   Paper
 ---
+
+论文 Training Region-based Object Detectors with Online Hard Example Mining
+
 ## 1 引言
 
 目标检测算子通常是将目标检测问题简化(reduction)为图像分类问题来进行训练, 这种简化(reduction)会带来原始分类任务中没有的新问题: 训练集标注数据和背景数据之间存在极大的不平衡状况(负样本数量远远大于正样本数量, 即背景数据大于标注数据). 因此解决训练时正负样本的比例问题成为目标检测的一大研究方向. 为解决这一问题, 通常的做法是引入 bootstrapping 方法, 或者称为困难负样本挖掘(hard negative mining), 其主要思想是通过选择检测算子的虚警目标来生成背景样本. 该策略需要一个迭代的训练算法, 通过当前数据集更新检测模型, 然后通过更新后的模型去获取新的 false positive 样本并加入到训练集中, 再通过新的数据集更新检测模型. 该方法通常的使用方式是, 训练集包含所有的目标样本以及一部分随机的背景样本.
